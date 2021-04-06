@@ -3,6 +3,11 @@ import sys
 
 def binarySearch(sortedArr: list, x: int) -> int:
 	"""Do a binary search on the given list
+    
+    -------------------
+    Complexity:
+        O = log(n)
+        S = 1
 
 	Parameters:
 	-------------

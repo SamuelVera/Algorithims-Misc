@@ -3,6 +3,11 @@ import sys
 def binarySearch(sortedArr: list, l: int, r: int, x: int) -> int:
     """Do a binary search recursively
     
+    -------------------
+    Complexity:
+        O = log(n)
+        S = log(n) stack calls
+
     Parameters:
     -----------
     sortedArr : list
@@ -20,12 +25,9 @@ def binarySearch(sortedArr: list, l: int, r: int, x: int) -> int:
     #Check for base case
     if r >= l:
         #Search can still go on
-
         med = l + ((r - l) // 2) #Calculate medium
-
         if sortedArr[med] == x: #Element found
             return med #Return index
-        
         if sortedArr[med] > x: #Divide intervel to lower half
             return binarySearch(sortedArr, l, med - 1, x)
         else :#Divide interval to upper half

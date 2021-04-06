@@ -5,17 +5,14 @@ def insertSort(arr: list, order: str) -> list:
     
     -------------------
     Complexity:
-        O(n^2)
-
+        O = n^2
+        S = 1
     -------------------
     Parameters:
-
     arr : list
         List to order
-
     order : "asc" | "desc"
         Order type, ascending or descending
-    
     -------------------
     Returns:
     list
@@ -29,7 +26,6 @@ def insertSort(arr: list, order: str) -> list:
     for i in range(1, n): #Iterate from 1 to n - 1
         key = cacheArr[i] #Cache key
         j = i - 1 #Previous index
-
         if order == "asc": #Ascending order
             while j >= 0 and key < cacheArr[j]: #Iterate in reverse until spot is found
                 cacheArr[j + 1] = cacheArr[j] #Move higher numbers up
