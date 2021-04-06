@@ -5,8 +5,8 @@ def insertSort(arr: list, order: str) -> list:
     
     -------------------
     Complexity:
-        O = n^2
-        S = 1
+        Time: O(n^2)
+        Space: O(n) Array in memory
     -------------------
     Parameters:
     arr : list

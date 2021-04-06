@@ -5,8 +5,8 @@ def binarySearch(sortedArr: list, l: int, r: int, x: int) -> int:
     
     -------------------
     Complexity:
-        O = log(n)
-        S = log(n) stack calls
+        Time: O(log(n))
+        Space: O(log(n) + n) Array in memory + stack calls
 
     Parameters:
     -----------
