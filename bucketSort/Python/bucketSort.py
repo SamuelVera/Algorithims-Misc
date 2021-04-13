@@ -56,7 +56,6 @@ def bucketSort(A: list, order: str = "asc"):
     k = 0 #Pointer for return
     if order == "asc":
         for i in range(0, slot_num): #Build output array
-            print(i)
             for j in range(0, len(arr[i])):
                 A[k] = arr[i][j]
                 k += 1
