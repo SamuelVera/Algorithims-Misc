@@ -1,6 +1,6 @@
 import sys #Import sys for script execution
 
-def insertSort(arr: list, order: str) -> list:
+def insertSort(arr: list, order: str = "asc") -> list:
     """Apply insert sort in the given order for the given array of integers
     
     -------------------
@@ -77,7 +77,6 @@ def tests():
     print("Order", list5, "Descending...")
     print("Result", insertSort(list5, "desc"))
     print()
-
 
 #Script execution
 if __name__=="__main__":
